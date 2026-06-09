@@ -1,0 +1,97 @@
+DATA_ROOT=/home/azaliia/projects/CV2/part2/project2
+WORK_DIR=/home/azaliia/projects/CV2/part2/project2
+POSE_DIR=/home/azaliia/projects/CV2/part2/project2/dataset/poses
+OUTPUT_DIR=/home/azaliia/projects/CV2/part2/project2/outputs/spoter
+Imports OK
+Loading existing split: /home/azaliia/projects/CV2/part2/project2/dataset/splits/signer_disjoint_nslt100.json
+Split stats: {
+  "num_signers": {
+    "train": 45,
+    "val": 5,
+    "test": 14
+  },
+  "num_clips": {
+    "train": 721,
+    "val": 14,
+    "test": 278
+  },
+  "classes_in_train": 100,
+  "classes_in_test": 100,
+  "total_clips": 1013,
+  "total_signers": 64
+}
+Failure visualization helpers ready
+=== Training baseline SPOTER ===
+/home/azaliia/.pyenv/versions/3.13.3/lib/python3.13/site-packages/torch/nn/modules/transformer.py:143: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.encoder = TransformerEncoder(
+[baseline] epoch 001 train_acc=0.0125 val_acc=0.0000 best=0.0000
+[baseline] epoch 002 train_acc=0.0139 val_acc=0.0000 best=0.0000
+[baseline] epoch 003 train_acc=0.0180 val_acc=0.0000 best=0.0000
+[baseline] epoch 004 train_acc=0.0430 val_acc=0.0000 best=0.0000
+[baseline] epoch 005 train_acc=0.0499 val_acc=0.0714 best=0.0714
+[baseline] epoch 006 train_acc=0.0680 val_acc=0.0000 best=0.0714
+[baseline] epoch 007 train_acc=0.0999 val_acc=0.0000 best=0.0714
+[baseline] epoch 008 train_acc=0.1151 val_acc=0.0000 best=0.0714
+[baseline] epoch 009 train_acc=0.1359 val_acc=0.0714 best=0.0714
+[baseline] epoch 010 train_acc=0.1789 val_acc=0.0000 best=0.0714
+[baseline] epoch 011 train_acc=0.1969 val_acc=0.0000 best=0.0714
+[baseline] epoch 012 train_acc=0.2843 val_acc=0.0714 best=0.0714
+[baseline] epoch 013 train_acc=0.3190 val_acc=0.0714 best=0.0714
+[baseline] epoch 014 train_acc=0.3301 val_acc=0.0714 best=0.0714
+[baseline] epoch 015 train_acc=0.3315 val_acc=0.1429 best=0.1429
+[baseline] epoch 016 train_acc=0.3329 val_acc=0.1429 best=0.1429
+[baseline] epoch 017 train_acc=0.3370 val_acc=0.1429 best=0.1429
+[baseline] epoch 018 train_acc=0.3509 val_acc=0.1429 best=0.1429
+[baseline] epoch 019 train_acc=0.3564 val_acc=0.1429 best=0.1429
+[baseline] epoch 020 train_acc=0.3564 val_acc=0.1429 best=0.1429
+[baseline] epoch 021 train_acc=0.3717 val_acc=0.1429 best=0.1429
+[baseline] epoch 022 train_acc=0.3967 val_acc=0.1429 best=0.1429
+[baseline] epoch 023 train_acc=0.3897 val_acc=0.1429 best=0.1429
+[baseline] epoch 024 train_acc=0.3842 val_acc=0.1429 best=0.1429
+[baseline] epoch 025 train_acc=0.3800 val_acc=0.1429 best=0.1429
+[baseline] epoch 026 train_acc=0.3981 val_acc=0.1429 best=0.1429
+[baseline] epoch 027 train_acc=0.3939 val_acc=0.1429 best=0.1429
+[baseline] epoch 028 train_acc=0.4147 val_acc=0.1429 best=0.1429
+[baseline] epoch 029 train_acc=0.3814 val_acc=0.1429 best=0.1429
+[baseline] epoch 030 train_acc=0.3967 val_acc=0.1429 best=0.1429
+[baseline] early stop epoch 30
+Baseline test: {'top1_accuracy': 0.11870503597122302, 'macro_f1': 0.09421703296703296}
+Saved /home/azaliia/projects/CV2/part2/project2/outputs/spoter/failure_cases/failure1_cross_signer.png
+Saved /home/azaliia/projects/CV2/part2/project2/outputs/spoter/failure_cases/failure2_confusion_pair.png
+=== Training Park SPOTER ===
+/home/azaliia/.pyenv/versions/3.13.3/lib/python3.13/site-packages/torch/nn/modules/transformer.py:143: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.encoder = TransformerEncoder(
+[park] epoch 001 train_acc=0.0125 val_acc=0.0000 best=0.0000
+[park] epoch 002 train_acc=0.0139 val_acc=0.0000 best=0.0000
+[park] epoch 003 train_acc=0.0180 val_acc=0.0000 best=0.0000
+[park] epoch 004 train_acc=0.0430 val_acc=0.0000 best=0.0000
+[park] epoch 005 train_acc=0.0499 val_acc=0.0714 best=0.0714
+[park] epoch 006 train_acc=0.0680 val_acc=0.0000 best=0.0714
+[park] epoch 007 train_acc=0.0999 val_acc=0.0000 best=0.0714
+[park] epoch 008 train_acc=0.1151 val_acc=0.0000 best=0.0714
+[park] epoch 009 train_acc=0.1359 val_acc=0.0714 best=0.0714
+[park] epoch 010 train_acc=0.1789 val_acc=0.0000 best=0.0714
+[park] epoch 011 train_acc=0.1969 val_acc=0.0000 best=0.0714
+[park] epoch 012 train_acc=0.2843 val_acc=0.0714 best=0.0714
+[park] epoch 013 train_acc=0.3190 val_acc=0.0714 best=0.0714
+[park] epoch 014 train_acc=0.3301 val_acc=0.0714 best=0.0714
+[park] epoch 015 train_acc=0.3315 val_acc=0.1429 best=0.1429
+[park] epoch 016 train_acc=0.3329 val_acc=0.1429 best=0.1429
+[park] epoch 017 train_acc=0.3370 val_acc=0.1429 best=0.1429
+[park] epoch 018 train_acc=0.3509 val_acc=0.1429 best=0.1429
+[park] epoch 019 train_acc=0.3564 val_acc=0.1429 best=0.1429
+[park] epoch 020 train_acc=0.3564 val_acc=0.1429 best=0.1429
+[park] epoch 021 train_acc=0.3717 val_acc=0.1429 best=0.1429
+[park] epoch 022 train_acc=0.3967 val_acc=0.1429 best=0.1429
+[park] epoch 023 train_acc=0.3897 val_acc=0.1429 best=0.1429
+[park] epoch 024 train_acc=0.3842 val_acc=0.1429 best=0.1429
+[park] epoch 025 train_acc=0.3800 val_acc=0.1429 best=0.1429
+[park] epoch 026 train_acc=0.3981 val_acc=0.1429 best=0.1429
+[park] epoch 027 train_acc=0.3939 val_acc=0.1429 best=0.1429
+[park] epoch 028 train_acc=0.4147 val_acc=0.1429 best=0.1429
+[park] epoch 029 train_acc=0.3814 val_acc=0.1429 best=0.1429
+[park] epoch 030 train_acc=0.3967 val_acc=0.1429 best=0.1429
+[park] early stop epoch 30
+Park test: {'top1_accuracy': 0.11870503597122302, 'macro_f1': 0.09421703296703296}
+COMPARISON baseline {'top1_accuracy': 0.11870503597122302, 'macro_f1': 0.09421703296703296} park {'top1_accuracy': 0.11870503597122302, 'macro_f1': 0.09421703296703296}
+DONE

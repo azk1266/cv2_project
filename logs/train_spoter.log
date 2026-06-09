@@ -1,0 +1,39 @@
+/home/azaliia/.pyenv/versions/3.13.3/lib/python3.13/site-packages/torch/nn/modules/transformer.py:143: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.encoder = TransformerEncoder(
+epoch 001 loss=4.7276 train_acc=0.0125 val_acc=0.0000 best_val=0.0000
+epoch 002 loss=4.6509 train_acc=0.0139 val_acc=0.0000 best_val=0.0000
+epoch 003 loss=4.5996 train_acc=0.0180 val_acc=0.0000 best_val=0.0000
+epoch 004 loss=4.4361 train_acc=0.0430 val_acc=0.0000 best_val=0.0000
+epoch 005 loss=4.2312 train_acc=0.0499 val_acc=0.0714 best_val=0.0714
+epoch 006 loss=4.0405 train_acc=0.0680 val_acc=0.0000 best_val=0.0714
+epoch 007 loss=3.8738 train_acc=0.0999 val_acc=0.0000 best_val=0.0714
+epoch 008 loss=3.7152 train_acc=0.1151 val_acc=0.0000 best_val=0.0714
+epoch 009 loss=3.5546 train_acc=0.1359 val_acc=0.0714 best_val=0.0714
+epoch 010 loss=3.4194 train_acc=0.1789 val_acc=0.0000 best_val=0.0714
+epoch 011 loss=3.2829 train_acc=0.1969 val_acc=0.0000 best_val=0.0714
+epoch 012 loss=2.9693 train_acc=0.2843 val_acc=0.0714 best_val=0.0714
+epoch 013 loss=2.9239 train_acc=0.3190 val_acc=0.0714 best_val=0.0714
+epoch 014 loss=2.9028 train_acc=0.3301 val_acc=0.0714 best_val=0.0714
+epoch 015 loss=2.8588 train_acc=0.3315 val_acc=0.1429 best_val=0.1429
+epoch 016 loss=2.8517 train_acc=0.3329 val_acc=0.1429 best_val=0.1429
+epoch 017 loss=2.8269 train_acc=0.3370 val_acc=0.1429 best_val=0.1429
+epoch 018 loss=2.7996 train_acc=0.3509 val_acc=0.1429 best_val=0.1429
+epoch 019 loss=2.7735 train_acc=0.3564 val_acc=0.1429 best_val=0.1429
+epoch 020 loss=2.7536 train_acc=0.3564 val_acc=0.1429 best_val=0.1429
+epoch 021 loss=2.7281 train_acc=0.3717 val_acc=0.1429 best_val=0.1429
+epoch 022 loss=2.7010 train_acc=0.3967 val_acc=0.1429 best_val=0.1429
+epoch 023 loss=2.6848 train_acc=0.3897 val_acc=0.1429 best_val=0.1429
+epoch 024 loss=2.6858 train_acc=0.3842 val_acc=0.1429 best_val=0.1429
+epoch 025 loss=2.6875 train_acc=0.3800 val_acc=0.1429 best_val=0.1429
+epoch 026 loss=2.6795 train_acc=0.3981 val_acc=0.1429 best_val=0.1429
+epoch 027 loss=2.6735 train_acc=0.3939 val_acc=0.1429 best_val=0.1429
+epoch 028 loss=2.6737 train_acc=0.4147 val_acc=0.1429 best_val=0.1429
+epoch 029 loss=2.6666 train_acc=0.3814 val_acc=0.1429 best_val=0.1429
+epoch 030 loss=2.6644 train_acc=0.3967 val_acc=0.1429 best_val=0.1429
+Early stop at epoch 30
+
+=== Main results (signer-disjoint test) ===
+{
+  "top1_accuracy": 0.11870503597122302,
+  "macro_f1": 0.09421703296703296
+}

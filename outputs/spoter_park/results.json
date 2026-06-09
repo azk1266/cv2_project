@@ -1,0 +1,12 @@
+{
+  "config": {
+    "use_park_norm": true,
+    "seed": 379,
+    "lr": 0.001
+  },
+  "test": {
+    "top1_accuracy": 0.10071942446043165,
+    "macro_f1": 0.07392307486115536
+  },
+  "best_val_accuracy": 0.14285714285714285
+}

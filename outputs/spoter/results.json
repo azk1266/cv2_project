@@ -1,0 +1,21 @@
+{
+  "config": {
+    "num_classes": 100,
+    "hidden_dim": 108,
+    "epochs": 100,
+    "lr": 0.001,
+    "seed": 379,
+    "batch_size": 1,
+    "patience": 15,
+    "device": "cuda"
+  },
+  "val": {
+    "top1_accuracy": 0.14285714285714285,
+    "macro_f1": 0.09523809523809523
+  },
+  "test": {
+    "top1_accuracy": 0.10071942446043165,
+    "macro_f1": 0.07392307486115536
+  },
+  "best_val_accuracy": 0.14285714285714285
+}
